@@ -11,7 +11,7 @@ import { GetFieldsFromList } from '@refinedev/nestjs-query';
 import { Input, Space, Table } from 'antd';
 import React from 'react'
 
-export const CompanyListPage = () => {
+export const CompanyListPage = ({ children }: React.PropsWithChildren) => {
   
   const go = useGo();
   const { tableProps, filters } = useTable<
@@ -55,6 +55,7 @@ export const CompanyListPage = () => {
   })
   
   return (
+    <div>
     <List
       breadcrumb={false}
       headerButtons={() => (
@@ -120,6 +121,8 @@ export const CompanyListPage = () => {
         />
       </Table>
     </List>
+    {children}
+    </div>
   )
 }
 
