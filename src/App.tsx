@@ -28,7 +28,7 @@ import TasksEditPage from "./pages/tasks/edit";
 function App() {
   return (
     <BrowserRouter>
-      <GitHubBanner />
+      {/* <GitHubBanner /> */}
       <RefineKbarProvider>
         {/* <ColorModeContextProvider> */}
           <AntdApp>
@@ -84,7 +84,7 @@ function App() {
                 <UnsavedChangesNotifier />
                 <DocumentTitleHandler />
               </Refine>
-              <DevtoolsPanel />
+              {/* <DevtoolsPanel /> */}
             </DevtoolsProvider>
           </AntdApp>
         {/* </ColorModeContextProvider> */}
